@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FD622F70ECAD1D645FE703D /* JoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD626270945603301881391 /* JoinView.swift */; };
+		5FD623A5C2080CBE02DEF9D9 /* JoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD621BB9AC9F9DD2C7DA70C /* JoinViewModel.swift */; };
+		5FD62A162422E1A040AB6E4D /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6253FF8961C2A532119F4 /* ButtonStyle.swift */; };
+		5FD62EF17FC861B9A5517F0F /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62A7E84F1E14077D8C1E0 /* GameView.swift */; };
+		6A5296762995F6260043C65F /* SecretHitlerIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5296752995F6260043C65F /* SecretHitlerIOSApp.swift */; };
+		6A5296782995F6260043C65F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5296772995F6260043C65F /* ContentView.swift */; };
+		6A52967A2995F6270043C65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5296792995F6270043C65F /* Assets.xcassets */; };
+		6A52967E2995F6270043C65F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A52967D2995F6270043C65F /* Preview Assets.xcassets */; };
+		6A5296882995F6270043C65F /* SecretHitlerIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5296872995F6270043C65F /* SecretHitlerIOSTests.swift */; };
+		6A5296922995F6270043C65F /* SecretHitlerIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5296912995F6270043C65F /* SecretHitlerIOSUITests.swift */; };
+		6A5296942995F6270043C65F /* SecretHitlerIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5296932995F6270043C65F /* SecretHitlerIOSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A5296842995F6270043C65F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A52966A2995F6260043C65F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A5296712995F6260043C65F;
+			remoteInfo = SecretHitlerIOS;
+		};
+		6A52968E2995F6270043C65F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A52966A2995F6260043C65F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A5296712995F6260043C65F;
+			remoteInfo = SecretHitlerIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5FD621BB9AC9F9DD2C7DA70C /* JoinViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinViewModel.swift; sourceTree = "<group>"; };
+		5FD6253FF8961C2A532119F4 /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		5FD626270945603301881391 /* JoinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinView.swift; sourceTree = "<group>"; };
+		5FD62A7E84F1E14077D8C1E0 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		6A5296722995F6260043C65F /* SecretHitlerIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretHitlerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A5296752995F6260043C65F /* SecretHitlerIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretHitlerIOSApp.swift; sourceTree = "<group>"; };
+		6A5296772995F6260043C65F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6A5296792995F6270043C65F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A52967B2995F6270043C65F /* SecretHitlerIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SecretHitlerIOS.entitlements; sourceTree = "<group>"; };
+		6A52967D2995F6270043C65F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6A5296832995F6270043C65F /* SecretHitlerIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretHitlerIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A5296872995F6270043C65F /* SecretHitlerIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretHitlerIOSTests.swift; sourceTree = "<group>"; };
+		6A52968D2995F6270043C65F /* SecretHitlerIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretHitlerIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A5296912995F6270043C65F /* SecretHitlerIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretHitlerIOSUITests.swift; sourceTree = "<group>"; };
+		6A5296932995F6270043C65F /* SecretHitlerIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretHitlerIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A52966F2995F6260043C65F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A5296802995F6270043C65F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A52968A2995F6270043C65F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FD624D347576B45BCDA1345 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5FD62A5F0DFF7E330C63B023 /* styles */,
+				5FD62A7E84F1E14077D8C1E0 /* GameView.swift */,
+				5FD626270945603301881391 /* JoinView.swift */,
+				5FD621BB9AC9F9DD2C7DA70C /* JoinViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5FD62A5F0DFF7E330C63B023 /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				5FD6253FF8961C2A532119F4 /* ButtonStyle.swift */,
+			);
+			path = styles;
+			sourceTree = "<group>";
+		};
+		6A5296692995F6260043C65F = {
+			isa = PBXGroup;
+			children = (
+				6A5296742995F6260043C65F /* SecretHitlerIOS */,
+				6A5296862995F6270043C65F /* SecretHitlerIOSTests */,
+				6A5296902995F6270043C65F /* SecretHitlerIOSUITests */,
+				6A5296732995F6260043C65F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A5296732995F6260043C65F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A5296722995F6260043C65F /* SecretHitlerIOS.app */,
+				6A5296832995F6270043C65F /* SecretHitlerIOSTests.xctest */,
+				6A52968D2995F6270043C65F /* SecretHitlerIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A5296742995F6260043C65F /* SecretHitlerIOS */ = {
+			isa = PBXGroup;
+			children = (
+				6A5296752995F6260043C65F /* SecretHitlerIOSApp.swift */,
+				6A5296772995F6260043C65F /* ContentView.swift */,
+				6A5296792995F6270043C65F /* Assets.xcassets */,
+				6A52967B2995F6270043C65F /* SecretHitlerIOS.entitlements */,
+				6A52967C2995F6270043C65F /* Preview Content */,
+				5FD624D347576B45BCDA1345 /* Views */,
+			);
+			path = SecretHitlerIOS;
+			sourceTree = "<group>";
+		};
+		6A52967C2995F6270043C65F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6A52967D2995F6270043C65F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6A5296862995F6270043C65F /* SecretHitlerIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A5296872995F6270043C65F /* SecretHitlerIOSTests.swift */,
+			);
+			path = SecretHitlerIOSTests;
+			sourceTree = "<group>";
+		};
+		6A5296902995F6270043C65F /* SecretHitlerIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A5296912995F6270043C65F /* SecretHitlerIOSUITests.swift */,
+				6A5296932995F6270043C65F /* SecretHitlerIOSUITestsLaunchTests.swift */,
+			);
+			path = SecretHitlerIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A5296712995F6260043C65F /* SecretHitlerIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A5296972995F6270043C65F /* Build configuration list for PBXNativeTarget "SecretHitlerIOS" */;
+			buildPhases = (
+				6A52966E2995F6260043C65F /* Sources */,
+				6A52966F2995F6260043C65F /* Frameworks */,
+				6A5296702995F6260043C65F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecretHitlerIOS;
+			productName = SecretHitlerIOS;
+			productReference = 6A5296722995F6260043C65F /* SecretHitlerIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A5296822995F6270043C65F /* SecretHitlerIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A52969A2995F6270043C65F /* Build configuration list for PBXNativeTarget "SecretHitlerIOSTests" */;
+			buildPhases = (
+				6A52967F2995F6270043C65F /* Sources */,
+				6A5296802995F6270043C65F /* Frameworks */,
+				6A5296812995F6270043C65F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A5296852995F6270043C65F /* PBXTargetDependency */,
+			);
+			name = SecretHitlerIOSTests;
+			productName = SecretHitlerIOSTests;
+			productReference = 6A5296832995F6270043C65F /* SecretHitlerIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A52968C2995F6270043C65F /* SecretHitlerIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A52969D2995F6270043C65F /* Build configuration list for PBXNativeTarget "SecretHitlerIOSUITests" */;
+			buildPhases = (
+				6A5296892995F6270043C65F /* Sources */,
+				6A52968A2995F6270043C65F /* Frameworks */,
+				6A52968B2995F6270043C65F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A52968F2995F6270043C65F /* PBXTargetDependency */,
+			);
+			name = SecretHitlerIOSUITests;
+			productName = SecretHitlerIOSUITests;
+			productReference = 6A52968D2995F6270043C65F /* SecretHitlerIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A52966A2995F6260043C65F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6A5296712995F6260043C65F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					6A5296822995F6270043C65F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6A5296712995F6260043C65F;
+					};
+					6A52968C2995F6270043C65F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6A5296712995F6260043C65F;
+					};
+				};
+			};
+			buildConfigurationList = 6A52966D2995F6260043C65F /* Build configuration list for PBXProject "SecretHitlerIOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A5296692995F6260043C65F;
+			productRefGroup = 6A5296732995F6260043C65F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A5296712995F6260043C65F /* SecretHitlerIOS */,
+				6A5296822995F6270043C65F /* SecretHitlerIOSTests */,
+				6A52968C2995F6270043C65F /* SecretHitlerIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A5296702995F6260043C65F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A52967E2995F6270043C65F /* Preview Assets.xcassets in Resources */,
+				6A52967A2995F6270043C65F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A5296812995F6270043C65F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A52968B2995F6270043C65F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A52966E2995F6260043C65F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A5296782995F6260043C65F /* ContentView.swift in Sources */,
+				6A5296762995F6260043C65F /* SecretHitlerIOSApp.swift in Sources */,
+				5FD62A162422E1A040AB6E4D /* ButtonStyle.swift in Sources */,
+				5FD62EF17FC861B9A5517F0F /* GameView.swift in Sources */,
+				5FD622F70ECAD1D645FE703D /* JoinView.swift in Sources */,
+				5FD623A5C2080CBE02DEF9D9 /* JoinViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A52967F2995F6270043C65F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A5296882995F6270043C65F /* SecretHitlerIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A5296892995F6270043C65F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A5296942995F6270043C65F /* SecretHitlerIOSUITestsLaunchTests.swift in Sources */,
+				6A5296922995F6270043C65F /* SecretHitlerIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A5296852995F6270043C65F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A5296712995F6260043C65F /* SecretHitlerIOS */;
+			targetProxy = 6A5296842995F6270043C65F /* PBXContainerItemProxy */;
+		};
+		6A52968F2995F6270043C65F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A5296712995F6260043C65F /* SecretHitlerIOS */;
+			targetProxy = 6A52968E2995F6270043C65F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6A5296952995F6270043C65F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A5296962995F6270043C65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6A5296982995F6270043C65F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SecretHitlerIOS/SecretHitlerIOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SecretHitlerIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = isaac.SecretHitlerIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A5296992995F6270043C65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SecretHitlerIOS/SecretHitlerIOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SecretHitlerIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = isaac.SecretHitlerIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6A52969B2995F6270043C65F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = isaac.SecretHitlerIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecretHitlerIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecretHitlerIOS";
+			};
+			name = Debug;
+		};
+		6A52969C2995F6270043C65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = isaac.SecretHitlerIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecretHitlerIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecretHitlerIOS";
+			};
+			name = Release;
+		};
+		6A52969E2995F6270043C65F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = isaac.SecretHitlerIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SecretHitlerIOS;
+			};
+			name = Debug;
+		};
+		6A52969F2995F6270043C65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = isaac.SecretHitlerIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SecretHitlerIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A52966D2995F6260043C65F /* Build configuration list for PBXProject "SecretHitlerIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A5296952995F6270043C65F /* Debug */,
+				6A5296962995F6270043C65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A5296972995F6270043C65F /* Build configuration list for PBXNativeTarget "SecretHitlerIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A5296982995F6270043C65F /* Debug */,
+				6A5296992995F6270043C65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A52969A2995F6270043C65F /* Build configuration list for PBXNativeTarget "SecretHitlerIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A52969B2995F6270043C65F /* Debug */,
+				6A52969C2995F6270043C65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A52969D2995F6270043C65F /* Build configuration list for PBXNativeTarget "SecretHitlerIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A52969E2995F6270043C65F /* Debug */,
+				6A52969F2995F6270043C65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A52966A2995F6260043C65F /* Project object */;
+}
