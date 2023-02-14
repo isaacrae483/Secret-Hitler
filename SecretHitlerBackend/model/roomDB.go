@@ -3,7 +3,6 @@ package model
 import (
 	"database/sql"
 	"errors"
-	"fmt"
 	"log"
 )
 
@@ -19,8 +18,6 @@ func (room *Room) Create(db *sql.DB) error {
 	if err != nil {
 		return err
 	}
-
-	fmt.Println(room.ID)
 
 	return nil
 }
@@ -45,10 +42,44 @@ func GetRoomByCode(code string, db *sql.DB) (Room, error) {
 	return room, nil
 }
 
+func (room *Room) OccupantCount(db *sql.DB) (int64, error) {
+	stmt, err := db.Prepare("SELECT COUNT(*) FROM room_occupants WHERE room_id = ?")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	var count int64
+
+	// Execute the prepared statement, passing in an id value for the
+	// parameter whose placeholder is ?
+	err = stmt.QueryRow(room.ID).Scan(&count)
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return 0, errors.New("record not found")
+		}
+		return 0, err
+	}
+	return count, nil
+}
+
 func (room *Room) Save(db *sql.DB) error {
 	return nil
 }
 
 func (room *Room) Delete() error {
+	return nil
+}
+
+func (room *Room) AddPerson(userID uint, db *sql.DB) error {
+	stmt, err := db.Prepare("INSERT INTO room_occupants (room_id, user_id) VALUES (?,?);")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	_, err = stmt.Exec(room.ID, userID)
+	if err != nil {
+		return err
+	}
+
 	return nil
 }
