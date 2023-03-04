@@ -7,9 +7,14 @@ import (
 	"net/http"
 )
 
-func GetRooms(config *environment.AppConfig) gin.HandlerFunc {
+func GetAvailableRooms(config *environment.AppConfig) gin.HandlerFunc {
 	return func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{"hello": "GET"})
+		rooms, err := model.GetAvailableRooms(config.DB)
+		if err != nil {
+			_ = c.AbortWithError(http.StatusInternalServerError, err)
+			return
+		}
+		c.JSON(http.StatusOK, gin.H{"rooms": rooms})
 	}
 }
 
@@ -37,6 +42,6 @@ func JoinRoom(config *environment.AppConfig) gin.HandlerFunc {
 			return
 		}
 
-		c.JSON(http.StatusOK, gin.H{"hello": "JOIN"})
+		c.JSON(http.StatusOK, gin.H{})
 	}
 }

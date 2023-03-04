@@ -13,7 +13,7 @@ func main() {
 	_ = r.SetTrustedProxies(nil)
 
 	room := r.Group("/rooms")
-	room.GET("/available", api.GetRooms(config))
+	room.GET("/available", api.GetAvailableRooms(config))
 	room.POST("/create", api.CreateRoom(config))
 	room.PUT("/join", api.JoinRoom(config))
 

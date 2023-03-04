@@ -3,6 +3,7 @@ package model
 import (
 	"database/sql"
 	"errors"
+	"fmt"
 	"log"
 )
 
@@ -20,6 +21,28 @@ func (room *Room) Create(db *sql.DB) error {
 	}
 
 	return nil
+}
+
+func GetAvailableRooms(db *sql.DB) ([]Room, error) {
+	stmt, err := db.Prepare("select * from (select rooms.*, count(ro.room_id) as occupant_count from rooms join room_occupants ro on rooms.id = ro.room_id group by rooms.id) as rooms where rooms.size > rooms. occupant_count")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	var rooms []Room
+
+	rows, err := stmt.Query()
+	for rows.Next() {
+		var room Room
+		var count int64
+		err := rows.Scan(&room.ID, &room.CreatedAt, &room.Code, &room.Size, &count)
+		if err != nil {
+			log.Fatal(err)
+		}
+		rooms = append(rooms, room)
+	}
+	fmt.Println("error", err)
+	return rooms, err
 }
 
 func GetRoomByCode(code string, db *sql.DB) (Room, error) {
@@ -60,10 +83,6 @@ func (room *Room) OccupantCount(db *sql.DB) (int64, error) {
 		return 0, err
 	}
 	return count, nil
-}
-
-func (room *Room) Save(db *sql.DB) error {
-	return nil
 }
 
 func (room *Room) Delete() error {

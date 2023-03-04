@@ -6,7 +6,6 @@ require (
 	github.com/gin-gonic/gin v1.8.2
 	github.com/mattn/go-sqlite3 v1.14.16
 	github.com/pressly/goose/v3 v3.9.0
-	modernc.org/sqlite v1.20.4
 )
 
 require (

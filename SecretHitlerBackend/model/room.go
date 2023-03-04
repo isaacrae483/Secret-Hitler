@@ -18,7 +18,7 @@ func CreateRoom(db *sql.DB) (string, error) {
 	room := Room{
 		CreatedAt: time.Now(),
 		Code:      utils.RandString(5),
-		Size:      6,
+		Size:      10,
 	}
 
 	if err := room.Create(db); err != nil {
