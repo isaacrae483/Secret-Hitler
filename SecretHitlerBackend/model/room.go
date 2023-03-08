@@ -17,7 +17,7 @@ type Room struct {
 func CreateRoom(db *sql.DB) (string, error) {
 	room := Room{
 		CreatedAt: time.Now(),
-		Code:      utils.RandString(5),
+		Code:      utils.RandUpperString(5),
 		Size:      10,
 	}
 

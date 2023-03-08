@@ -3,7 +3,6 @@ package model
 import (
 	"database/sql"
 	"errors"
-	"fmt"
 	"log"
 )
 
@@ -41,7 +40,6 @@ func GetAvailableRooms(db *sql.DB) ([]Room, error) {
 		}
 		rooms = append(rooms, room)
 	}
-	fmt.Println("error", err)
 	return rooms, err
 }
 

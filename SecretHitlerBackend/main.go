@@ -12,6 +12,10 @@ func main() {
 	r := gin.Default()
 	_ = r.SetTrustedProxies(nil)
 
+	user := r.Group("/users")
+	user.POST("/login", api.Login(config))
+	user.POST("/signup", api.Signup(config))
+
 	room := r.Group("/rooms")
 	room.GET("/available", api.GetAvailableRooms(config))
 	room.POST("/create", api.CreateRoom(config))

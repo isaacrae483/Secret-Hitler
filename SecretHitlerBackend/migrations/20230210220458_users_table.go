@@ -10,7 +10,7 @@ func init() {
 }
 
 func upUsersTable(tx *sql.Tx) error {
-	_, err := tx.Exec("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, created_at DATETIME NOT NULL, name TEXT NOT NULL, guest BOOLEAN default false);")
+	_, err := tx.Exec("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, created_at DATETIME NOT NULL, username TEXT UNIQUE NOT NULL, password string NOT NULL);")
 	if err != nil {
 		return err
 	}
