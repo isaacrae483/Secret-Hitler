@@ -25,6 +25,7 @@ func CreateRoom(db *sql.DB) (string, error) {
 		return "", err
 	}
 
+	//TODO: add person to room
 	return room.Code, nil
 }
 

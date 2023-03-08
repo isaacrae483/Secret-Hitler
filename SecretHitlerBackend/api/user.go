@@ -21,7 +21,7 @@ func Login(config *environment.AppConfig) gin.HandlerFunc {
 			return
 		}
 
-		c.SetCookie("session_key", session.Key, 3600, "/", "localhost", false, true)
+		c.SetCookie("session_key", session.Key, 36000, "/", "localhost", false, true)
 
 		c.JSON(http.StatusOK, gin.H{})
 	}
@@ -41,7 +41,7 @@ func Signup(config *environment.AppConfig) gin.HandlerFunc {
 			return
 		}
 
-		c.SetCookie("session_key", session.Key, 3600, "/", "localhost", false, true)
+		c.SetCookie("session_key", session.Key, 36000, "/", "localhost", false, true)
 
 		c.JSON(http.StatusOK, gin.H{})
 	}

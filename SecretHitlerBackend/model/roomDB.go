@@ -23,6 +23,7 @@ func (room *Room) Create(db *sql.DB) error {
 }
 
 func GetAvailableRooms(db *sql.DB) ([]Room, error) {
+	//TODO: doesn't get room if 0 occupants, tho that shouldn't happen
 	stmt, err := db.Prepare("select * from (select rooms.*, count(ro.room_id) as occupant_count from rooms join room_occupants ro on rooms.id = ro.room_id group by rooms.id) as rooms where rooms.size > rooms. occupant_count")
 	if err != nil {
 		log.Fatal(err)

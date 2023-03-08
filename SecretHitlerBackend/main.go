@@ -12,11 +12,14 @@ func main() {
 	r := gin.Default()
 	_ = r.SetTrustedProxies(nil)
 
+	rAuth := r.Group("")
+	rAuth.Use(api.AuthMiddleware(config))
+
 	user := r.Group("/users")
 	user.POST("/login", api.Login(config))
 	user.POST("/signup", api.Signup(config))
 
-	room := r.Group("/rooms")
+	room := rAuth.Group("/rooms")
 	room.GET("/available", api.GetAvailableRooms(config))
 	room.POST("/create", api.CreateRoom(config))
 	room.PUT("/join", api.JoinRoom(config))

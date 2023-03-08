@@ -22,7 +22,7 @@ func (session *Session) Create(db *sql.DB) error {
 	return nil
 }
 
-func GetSession(username string, db *sql.DB) (Session, error) {
+func GetSession(sessionKey string, db *sql.DB) (Session, error) {
 	stmt, err := db.Prepare("SELECT * FROM sessions WHERE key = ?")
 	if err != nil {
 		log.Fatal(err)
@@ -30,9 +30,7 @@ func GetSession(username string, db *sql.DB) (Session, error) {
 
 	var session Session
 
-	// Execute the prepared statement, passing in an id value for the
-	// parameter whose placeholder is ?
-	err = stmt.QueryRow(username).Scan(&session.ID, &session.CreatedAt, &session.UserID, &session.Key)
+	err = stmt.QueryRow(sessionKey).Scan(&session.ID, &session.CreatedAt, &session.UserID, &session.Key)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			return Session{}, errors.New("record not found")
