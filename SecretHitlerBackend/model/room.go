@@ -14,7 +14,7 @@ type Room struct {
 	Size      int64
 }
 
-func CreateRoom(db *sql.DB) (string, error) {
+func CreateRoom(user User, db *sql.DB) (string, error) {
 	room := Room{
 		CreatedAt: time.Now(),
 		Code:      utils.RandUpperString(5),
@@ -25,7 +25,10 @@ func CreateRoom(db *sql.DB) (string, error) {
 		return "", err
 	}
 
-	//TODO: add person to room
+	if err := room.AddPerson(user.ID, db); err != nil {
+		return "", err
+	}
+
 	return room.Code, nil
 }
 

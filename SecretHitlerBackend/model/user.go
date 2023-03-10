@@ -4,6 +4,8 @@ import (
 	"SecretHitlerBackend/utils"
 	"database/sql"
 	"errors"
+	"fmt"
+	"github.com/gin-gonic/gin"
 	"golang.org/x/crypto/bcrypt"
 	"log"
 	"time"
@@ -32,13 +34,24 @@ func (user *User) GenerateSession(db *sql.DB) (Session, error) {
 	return session, nil
 }
 
+func GetUserFromContext(c *gin.Context, db *sql.DB) (User, error) {
+	temp, exists := c.Get("user_id")
+	if !exists {
+		return User{}, errors.New("no user_id")
+	}
+	userID := temp.(uint)
+	fmt.Println("id", userID)
+	return GetUserByID(userID, db)
+
+}
+
 type Credentials struct {
 	Username string `json:"username"`
 	Password string `json:"password"`
 }
 
 func (credentials *Credentials) Login(db *sql.DB) (Session, error) {
-	user, err := GetUser(credentials.Username, db)
+	user, err := GetUserByUsername(credentials.Username, db)
 	if err != nil {
 		return Session{}, err
 	}
