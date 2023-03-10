@@ -4,7 +4,6 @@ import (
 	"SecretHitlerBackend/environment"
 	"SecretHitlerBackend/model"
 	"errors"
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -22,7 +21,6 @@ func AuthMiddleware(config *environment.AppConfig) gin.HandlerFunc {
 			_ = c.AbortWithError(http.StatusInternalServerError, errors.New("no session key"))
 			return
 		}
-		fmt.Println("here")
 
 		c.Set("user_id", session.UserID)
 

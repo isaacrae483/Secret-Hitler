@@ -3,7 +3,6 @@ package api
 import (
 	"SecretHitlerBackend/environment"
 	"SecretHitlerBackend/model"
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -26,7 +25,7 @@ func CreateRoom(config *environment.AppConfig) gin.HandlerFunc {
 			_ = c.AbortWithError(http.StatusInternalServerError, err)
 			return
 		}
-		fmt.Println(user)
+
 		code, err := model.CreateRoom(user, config.DB)
 		if err != nil {
 			_ = c.AbortWithError(http.StatusInternalServerError, err)

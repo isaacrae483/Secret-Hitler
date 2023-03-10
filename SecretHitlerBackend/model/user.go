@@ -4,7 +4,6 @@ import (
 	"SecretHitlerBackend/utils"
 	"database/sql"
 	"errors"
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"golang.org/x/crypto/bcrypt"
 	"log"
@@ -40,7 +39,6 @@ func GetUserFromContext(c *gin.Context, db *sql.DB) (User, error) {
 		return User{}, errors.New("no user_id")
 	}
 	userID := temp.(uint)
-	fmt.Println("id", userID)
 	return GetUserByID(userID, db)
 
 }
