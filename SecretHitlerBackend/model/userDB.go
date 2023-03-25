@@ -13,6 +13,9 @@ func (user *User) Create(db *sql.DB) error {
 	}
 
 	result, err := stmt.Exec(user.CreatedAt, user.Username, user.Password)
+	if err != nil {
+		return err
+	}
 	userID, err := result.LastInsertId()
 	user.ID = uint(userID)
 	if err != nil {
