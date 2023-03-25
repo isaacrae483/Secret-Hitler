@@ -6,8 +6,11 @@ import Foundation
 import SwiftUI
 
 struct JoinView: View {
+    @StateObject var viewModel: ViewModel
 
-    @StateObject var viewModel: ViewModel = ViewModel()
+    init(service: Service) {
+        _viewModel = StateObject(wrappedValue: ViewModel(service))
+    }
 
     var body: some View {
         VStack {

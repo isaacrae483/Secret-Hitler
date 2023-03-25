@@ -9,8 +9,17 @@
 /* Begin PBXBuildFile section */
 		5FD622F70ECAD1D645FE703D /* JoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD626270945603301881391 /* JoinView.swift */; };
 		5FD623A5C2080CBE02DEF9D9 /* JoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD621BB9AC9F9DD2C7DA70C /* JoinViewModel.swift */; };
+		5FD62815D43FA2C8BCD5C105 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD628E9BDBF231F9935A952 /* AuthenticationService.swift */; };
+		5FD6290B10992C2C39210B98 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD623797FDDFD14EB12FCC6 /* AuthView.swift */; };
+		5FD62973C2BBE2E35A727D64 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6243820622E3BA0CD09F6 /* Room.swift */; };
 		5FD62A162422E1A040AB6E4D /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6253FF8961C2A532119F4 /* ButtonStyle.swift */; };
+		5FD62A592C5E3271B9FB8BEC /* RoomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6253BB974DE417DF536AB /* RoomService.swift */; };
+		5FD62AE830704E846AB02F71 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD621C849F9EE529A535859 /* AuthViewModel.swift */; };
+		5FD62AEFEE8FF8399139C8B4 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62FC5BD69E5F312C8C03C /* Service.swift */; };
+		5FD62D125460DB32ED38EC00 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62276076DA5CF836F49AC /* Authentication.swift */; };
+		5FD62DBF4A9D3B5207A24DAF /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62DEF0531FE671091C124 /* Authenticator.swift */; };
 		5FD62EF17FC861B9A5517F0F /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62A7E84F1E14077D8C1E0 /* GameView.swift */; };
+		5FD62FF40D0D0EDEB0169132 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD625F2EDB90EB5DFF8FEE3 /* Network.swift */; };
 		6A5296762995F6260043C65F /* SecretHitlerIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5296752995F6260043C65F /* SecretHitlerIOSApp.swift */; };
 		6A5296782995F6260043C65F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5296772995F6260043C65F /* ContentView.swift */; };
 		6A52967A2995F6270043C65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5296792995F6270043C65F /* Assets.xcassets */; };
@@ -39,9 +48,18 @@
 
 /* Begin PBXFileReference section */
 		5FD621BB9AC9F9DD2C7DA70C /* JoinViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinViewModel.swift; sourceTree = "<group>"; };
+		5FD621C849F9EE529A535859 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		5FD62276076DA5CF836F49AC /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		5FD623797FDDFD14EB12FCC6 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		5FD6243820622E3BA0CD09F6 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		5FD6253BB974DE417DF536AB /* RoomService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomService.swift; sourceTree = "<group>"; };
 		5FD6253FF8961C2A532119F4 /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		5FD625F2EDB90EB5DFF8FEE3 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		5FD626270945603301881391 /* JoinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinView.swift; sourceTree = "<group>"; };
+		5FD628E9BDBF231F9935A952 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		5FD62A7E84F1E14077D8C1E0 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		5FD62DEF0531FE671091C124 /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		5FD62FC5BD69E5F312C8C03C /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		6A5296722995F6260043C65F /* SecretHitlerIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretHitlerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5296752995F6260043C65F /* SecretHitlerIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretHitlerIOSApp.swift; sourceTree = "<group>"; };
 		6A5296772995F6260043C65F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,8 +105,30 @@
 				5FD62A7E84F1E14077D8C1E0 /* GameView.swift */,
 				5FD626270945603301881391 /* JoinView.swift */,
 				5FD621BB9AC9F9DD2C7DA70C /* JoinViewModel.swift */,
+				5FD623797FDDFD14EB12FCC6 /* AuthView.swift */,
+				5FD621C849F9EE529A535859 /* AuthViewModel.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5FD625FB67D57206BE4CB84F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5FD6243820622E3BA0CD09F6 /* Room.swift */,
+				5FD62276076DA5CF836F49AC /* Authentication.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		5FD629D2D66101324E2E9D3A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5FD6253BB974DE417DF536AB /* RoomService.swift */,
+				5FD62FC5BD69E5F312C8C03C /* Service.swift */,
+				5FD628E9BDBF231F9935A952 /* AuthenticationService.swift */,
+				5FD62DEF0531FE671091C124 /* Authenticator.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		5FD62A5F0DFF7E330C63B023 /* styles */ = {
@@ -97,6 +137,14 @@
 				5FD6253FF8961C2A532119F4 /* ButtonStyle.swift */,
 			);
 			path = styles;
+			sourceTree = "<group>";
+		};
+		5FD62BA6CC189C00E628C2B8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5FD625F2EDB90EB5DFF8FEE3 /* Network.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		6A5296692995F6260043C65F = {
@@ -128,6 +176,9 @@
 				6A52967B2995F6270043C65F /* SecretHitlerIOS.entitlements */,
 				6A52967C2995F6270043C65F /* Preview Content */,
 				5FD624D347576B45BCDA1345 /* Views */,
+				5FD62BA6CC189C00E628C2B8 /* Network */,
+				5FD629D2D66101324E2E9D3A /* Service */,
+				5FD625FB67D57206BE4CB84F /* model */,
 			);
 			path = SecretHitlerIOS;
 			sourceTree = "<group>";
@@ -293,6 +344,15 @@
 				5FD62EF17FC861B9A5517F0F /* GameView.swift in Sources */,
 				5FD622F70ECAD1D645FE703D /* JoinView.swift in Sources */,
 				5FD623A5C2080CBE02DEF9D9 /* JoinViewModel.swift in Sources */,
+				5FD62FF40D0D0EDEB0169132 /* Network.swift in Sources */,
+				5FD62A592C5E3271B9FB8BEC /* RoomService.swift in Sources */,
+				5FD62AEFEE8FF8399139C8B4 /* Service.swift in Sources */,
+				5FD62815D43FA2C8BCD5C105 /* AuthenticationService.swift in Sources */,
+				5FD6290B10992C2C39210B98 /* AuthView.swift in Sources */,
+				5FD62AE830704E846AB02F71 /* AuthViewModel.swift in Sources */,
+				5FD62973C2BBE2E35A727D64 /* Room.swift in Sources */,
+				5FD62D125460DB32ED38EC00 /* Authentication.swift in Sources */,
+				5FD62DBF4A9D3B5207A24DAF /* Authenticator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

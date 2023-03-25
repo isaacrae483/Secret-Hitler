@@ -4,6 +4,7 @@ import (
 	"SecretHitlerBackend/api"
 	"SecretHitlerBackend/environment"
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
 func main() {
@@ -14,6 +15,10 @@ func main() {
 
 	rAuth := r.Group("")
 	rAuth.Use(api.AuthMiddleware(config))
+
+	r.GET("/test", func(c *gin.Context) {
+		c.JSON(http.StatusOK, gin.H{"test": "SUCCESS"})
+	})
 
 	user := r.Group("/users")
 	user.POST("/login", api.Login(config))
@@ -27,4 +32,5 @@ func main() {
 	if err := r.Run("localhost:8080"); err != nil {
 		panic(err)
 	}
+
 }

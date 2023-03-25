@@ -4,6 +4,7 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 extension JoinView {
     @MainActor class ViewModel: ObservableObject {
@@ -11,7 +12,11 @@ extension JoinView {
 
         @Published var code: String = ""
 
-        init() {}
+        let service: Service
+
+        init(_ service: Service) {
+            self.service = service
+        }
 
         func joinRoom() {
             print("joining")
@@ -23,8 +28,20 @@ extension JoinView {
             print("creating")
         }
 
+        var cancellationToken: AnyCancellable? // 2
+
         func browseRoom() {
+            cancellationToken = service.rooms.available()
+                    .mapError({ (error) -> Error in // 5
+                        print(error)
+                        return error
+                    })
+                    .sink(receiveCompletion: { _ in }, // 6
+                            receiveValue: {
+                                print($0)
+                            })
             print("browsing")
         }
+
     }
 }

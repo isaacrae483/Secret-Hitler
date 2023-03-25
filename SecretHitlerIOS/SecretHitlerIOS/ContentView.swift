@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var authenticator = Authenticator()
+    let service = Service()
     var body: some View {
         VStack {
-            JoinView()
+            if !authenticator.authenticated {
+                AuthView(service, authenticator)
+            } else {
+                JoinView(service: service)
+            }
         }
         .padding()
     }

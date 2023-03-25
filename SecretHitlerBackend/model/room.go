@@ -3,15 +3,27 @@ package model
 import (
 	"SecretHitlerBackend/utils"
 	"database/sql"
+	"encoding/json"
 	"errors"
 	"time"
 )
 
 type Room struct {
-	ID        uint
-	CreatedAt time.Time
-	Code      string
-	Size      int64
+	ID        uint      `json:"ID"`
+	CreatedAt time.Time `json:"created_at"`
+	Code      string    `json:"code"`
+	Size      int64     `json:"size"`
+}
+
+func (room *Room) MarshalJSON() ([]byte, error) {
+	type Alias Room
+	return json.Marshal(&struct {
+		*Alias
+		CreatedAt string `json:"created_at"`
+	}{
+		Alias:     (*Alias)(room),
+		CreatedAt: room.CreatedAt.Format("2006-01-02T15:04:05+0000"),
+	})
 }
 
 func CreateRoom(user User, db *sql.DB) (string, error) {

@@ -14,7 +14,7 @@ func GetAvailableRooms(config *environment.AppConfig) gin.HandlerFunc {
 			_ = c.AbortWithError(http.StatusInternalServerError, err)
 			return
 		}
-		c.JSON(http.StatusOK, gin.H{"rooms": rooms})
+		c.JSON(http.StatusOK, rooms)
 	}
 }
 
@@ -31,7 +31,7 @@ func CreateRoom(config *environment.AppConfig) gin.HandlerFunc {
 			_ = c.AbortWithError(http.StatusInternalServerError, err)
 			return
 		}
-		c.JSON(http.StatusOK, gin.H{"code": code})
+		c.JSON(http.StatusOK, code)
 	}
 }
 
