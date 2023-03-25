@@ -19,6 +19,7 @@
 		5FD62D125460DB32ED38EC00 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62276076DA5CF836F49AC /* Authentication.swift */; };
 		5FD62DBF4A9D3B5207A24DAF /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62DEF0531FE671091C124 /* Authenticator.swift */; };
 		5FD62EF17FC861B9A5517F0F /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62A7E84F1E14077D8C1E0 /* GameView.swift */; };
+		5FD62EFFE8108F909A45B74E /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD62B4B179998584033A54A /* TextFieldStyle.swift */; };
 		5FD62FF40D0D0EDEB0169132 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD625F2EDB90EB5DFF8FEE3 /* Network.swift */; };
 		6A5296762995F6260043C65F /* SecretHitlerIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5296752995F6260043C65F /* SecretHitlerIOSApp.swift */; };
 		6A5296782995F6260043C65F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5296772995F6260043C65F /* ContentView.swift */; };
@@ -58,6 +59,7 @@
 		5FD626270945603301881391 /* JoinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinView.swift; sourceTree = "<group>"; };
 		5FD628E9BDBF231F9935A952 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		5FD62A7E84F1E14077D8C1E0 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		5FD62B4B179998584033A54A /* TextFieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
 		5FD62DEF0531FE671091C124 /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
 		5FD62FC5BD69E5F312C8C03C /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		6A5296722995F6260043C65F /* SecretHitlerIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretHitlerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				5FD6253FF8961C2A532119F4 /* ButtonStyle.swift */,
+				5FD62B4B179998584033A54A /* TextFieldStyle.swift */,
 			);
 			path = styles;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				5FD62973C2BBE2E35A727D64 /* Room.swift in Sources */,
 				5FD62D125460DB32ED38EC00 /* Authentication.swift in Sources */,
 				5FD62DBF4A9D3B5207A24DAF /* Authenticator.swift in Sources */,
+				5FD62EFFE8108F909A45B74E /* TextFieldStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

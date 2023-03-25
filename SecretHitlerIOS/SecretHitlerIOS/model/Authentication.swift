@@ -5,8 +5,8 @@
 import Foundation
 
 struct Authentication: Codable {
-    let username: String
-    let password: String
+    var username: String
+    var password: String
 
     enum CodingKeys: String, CodingKey {
         case username = "username"

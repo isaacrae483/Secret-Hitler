@@ -17,6 +17,6 @@ class AuthenticationService {
     }
 
     func signup(auth: Authentication) -> AnyPublisher<[String: String], NetworkServiceError> {
-        client.request(.signup, body: auth)
+        client.request(.signup, "POST", body: auth)
     }
 }

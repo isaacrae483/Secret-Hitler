@@ -14,9 +14,20 @@ struct AuthView: View {
 
     var body: some View {
         VStack {
-            Button(action: viewModel.login) {
-                Text("login")
+            TextField("Username", text: $viewModel.authentication.username)
+                    .textFieldStyle(.rounded)
+            TextField("Password", text: $viewModel.authentication.password)
+                    .textFieldStyle(.rounded)
+
+            Button("Login" ) {
+                viewModel.login()
             }
+                    .buttonStyle(.rounded)
+            Button("Signup") {
+                viewModel.signup()
+            }
+                    .buttonStyle(.rounded)
+
         }
     }
 }
